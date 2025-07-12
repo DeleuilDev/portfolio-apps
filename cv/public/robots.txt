@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://cv.deleuil.dev/sitemap.xml 
