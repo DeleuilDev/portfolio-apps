@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "title": "Website of 24h de l'INSA",
+      "description": "Complete redesign and rebuild of the 24h de l'INSA website from scratch, featuring modern UI/UX design, responsive layout, and enhanced user experience for the annual student event.",
+      "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Web Design"],
+      "githubUrl": "https://gitlab.com/24-heures-insa/oversite"
+    },
+    {
+      "title": "LifeSignal",
+      "description": "Decentralized inheritance platform for secure digital asset transfer using Oasis Sapphire confidential EVM, Walrus storage, and smart contract voting system.",
+      "tags": ["Web3", "Solidity", "Hardhat", "Oasis Sapphire", "Walrus"],
+      "githubUrl": "https://ethglobal.com/showcase/lifesignal-niysp"
+    },
+    {
+      "title": "PassAMU",
+      "description": "Secure password manager with JavaFX interface featuring AES256 encryption, password generation, folder organization, and cross-platform clipboard support.",
+      "tags": ["Java", "JavaFX", "Maven", "AES256", "Security"],
+      "githubUrl": "https://etulab.univ-amu.fr/d20003665/M3105---PassAMU---Gestionnaire-de-Mot-de-Passe/-/tree/main"
+    },
+    {
+      "title": "CatEveryHourBot",
+      "description": "Mastodon bot that automatically posts cat pictures every hour using Node.js and Mastodon API. Gained 2,600+ followers with development and production environments.",
+      "tags": ["JavaScript", "Node.js", "Mastodon", "Bot", "API"],
+      "githubUrl": "https://github.com/DeleuilDev/CatEveryHourBot"
+    }
+  ]
+} 

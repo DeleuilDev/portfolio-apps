@@ -1,0 +1,40 @@
+services:
+  accueil:
+    build:
+      context: .
+      dockerfile: ./accueil/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - portfolio-network
+
+  cv:
+    build:
+      context: .
+      dockerfile: ./cv/Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - portfolio-network
+
+networks:
+  portfolio-network:
+    driver: bridge 

@@ -1,0 +1,80 @@
+{
+  "skills": [
+    {
+      "name": "JavaScript",
+      "icon": "javascript"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "typescript"
+    },
+    {
+      "name": "NodeJS",
+      "icon": "nodejs"
+    },
+    {
+      "name": "React",
+      "icon": "react"
+    },
+    {
+      "name": "NextJS",
+      "icon": "nextjs"
+    },
+    {
+      "name": "Angular",
+      "icon": "angular"
+    },
+    {
+      "name": "React Native",
+      "icon": "reactnative"
+    },
+    {
+      "name": "Java",
+      "icon": "java"
+    },
+    {
+      "name": "C++",
+      "icon": "cpp"
+    },
+    {
+      "name": "Go",
+      "icon": "go"
+    },
+    {
+      "name": "Rust",
+      "icon": "rust"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "mongodb"
+    },
+    {
+      "name": "Solidity",
+      "icon": "solidity"
+    },
+    {
+      "name": "Web3",
+      "icon": "web3"
+    },
+    {
+      "name": "Hardhat",
+      "icon": "hardhat"
+    },
+    {
+      "name": "Docker",
+      "icon": "docker"
+    },
+    {
+      "name": "Photoshop",
+      "icon": "photoshop"
+    },
+    {
+      "name": "Illustrator",
+      "icon": "illustrator"
+    },
+    {
+      "name": "Figma",
+      "icon": "figma"
+    }
+  ]
+} 

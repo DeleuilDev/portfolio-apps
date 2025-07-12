@@ -1,0 +1,34 @@
+{
+  "homeShortcuts": [
+    {
+      "icon": "cv",
+      "href": "/cv",
+      "label": "CV"
+    },
+    {
+      "icon": "book",
+      "href": "#",
+      "label": "Book"
+    },
+    {
+      "icon": "travel",
+      "href": "#",
+      "label": "Travel"
+    },
+    {
+      "icon": "github",
+      "href": "https://github.com/DeleuilDev",
+      "label": "GitHub"
+    },
+    {
+      "icon": "twitter",
+      "href": "https://twitter.com/deleuil_dev",
+      "label": "Twitter"
+    },
+    {
+      "icon": "analytics",
+      "href": "#",
+      "label": "Analytics"
+    }
+  ]
+} 

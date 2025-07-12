@@ -1,0 +1,36 @@
+{
+  "experience": [
+    {
+      "title": "Junior Software Engineer",
+      "company": "Yooz - Aimargues, France",
+      "period": "2022 - Now",
+      "description": "Full-stack development and maintenance of Yooz's platform using Node.js/Express backend and Angular/React Native frontends. Focus on feature evolution, code optimization, and system reliability improvements."
+    }
+  ],
+  "education": [
+    {
+      "title": "Master's degree in Computer Science",
+      "company": "HKUST - Hong Kong",
+      "period": "2025 - 2026",
+      "description": "Advanced studies in distributed systems, machine learning, and software engineering with focus on blockchain and Web3"
+    },
+    {
+      "title": "Engineer's degree in Computer Science (Apprenticeship)",
+      "company": "INSA Lyon - Lyon, France",
+      "period": "2023 - 2026",
+      "description": "Work-study program combining academic excellence with hands-on industry experience. Specialization in full-stack development, software architecture, and agile methodologies"
+    },
+    {
+      "title": "Bachelor's degree in Computer Science",
+      "company": "ÉTS Montreal - Montréal, Canada",
+      "period": "2022 - 2023",
+      "description": "International exchange program focused on distributed systems, network programming, and software engineering best practices in a multicultural environment"
+    },
+    {
+      "title": "Associate's degree in Computer Science",
+      "company": "Aix-Marseille University - Arles, France",
+      "period": "2020 - 2022",
+      "description": "Foundation in computer science fundamentals including algorithms, data structures, programming languages, and system design principles"
+    }
+  ]
+} 

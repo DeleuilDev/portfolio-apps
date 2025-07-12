@@ -1,0 +1,17 @@
+{
+  "cv": {
+    "title": "Full Stack Engineer & UI/UX Designer",
+    "summary": "Full-stack engineer and UI/UX designer specializing in Next.js, React, and Node.js. I craft intuitive user experiences and build secure Web3 dApps, seamlessly bridging technical development with design excellence and user-centered thinking.",
+    "skills": {
+      "frontend": "React, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Angular, Vue.js",
+      "backend": "Node.js, Express.js, Go, Python, REST APIs, GraphQL, Microservices",
+      "database": "MongoDB, PostgreSQL, Redis, Docker, Git, AWS, CI/CD, Webpack",
+      "design": "UI/UX Design, Figma, Adobe Photoshop, Adobe Illustrator, Responsive Design, Agile/Scrum",
+      "blockchain": "Solidity, Ethereum, Web3.js, Hardhat, Smart Contracts, DApps"
+    },
+    "languages": {
+      "French": "Native",
+      "English": "Fluent (C1)"
+    }
+  }
+} 
