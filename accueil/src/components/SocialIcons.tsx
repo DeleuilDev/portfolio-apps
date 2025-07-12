@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Twitter, Linkedin, FileText, BookOpen, Plane, BarChart3 } from "lucide-react";
+import { Github, Twitter, Linkedin, FileText, Laptop } from "lucide-react";
 import homeData from "@/data/home.json";
 
 export default function SocialIcons() {
@@ -8,9 +8,7 @@ export default function SocialIcons() {
     twitter: Twitter,
     linkedin: Linkedin,
     cv: FileText,
-    book: BookOpen,
-    travel: Plane,
-    analytics: BarChart3,
+    laptop: Laptop,
   };
 
   return (

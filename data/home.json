@@ -2,18 +2,8 @@
   "homeShortcuts": [
     {
       "icon": "cv",
-      "href": "/cv",
+      "href": "https://cv.deleuil.dev/",
       "label": "CV"
-    },
-    {
-      "icon": "book",
-      "href": "#",
-      "label": "Book"
-    },
-    {
-      "icon": "travel",
-      "href": "#",
-      "label": "Travel"
     },
     {
       "icon": "github",
@@ -26,9 +16,9 @@
       "label": "Twitter"
     },
     {
-      "icon": "analytics",
-      "href": "#",
-      "label": "Analytics"
+      "icon": "linkedin",
+      "href": "https://linkedin.com/in/marius-deleuil",
+      "label": "LinkedIn"
     }
   ]
 } 
