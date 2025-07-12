@@ -74,14 +74,14 @@ body {
   border: 1px solid var(--border-card);
 }
 
-/* Pattern de points décoratifs */
+/* Decorative dots pattern */
 .bg-dots-pattern {
   background-image: radial-gradient(circle, var(--foreground) 1px, transparent 1px);
   background-size: 20px 20px;
   opacity: 0.25;
 }
 
-/* Animations d'apparition */
+/* Fade-in animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -113,7 +113,7 @@ body {
   }
 }
 
-/* Classes d'animation */
+/* Animation classes */
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
 }

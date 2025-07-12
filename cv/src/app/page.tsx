@@ -15,12 +15,12 @@ import experienceData from "@/data/experience.json";
 export default function CV() {
   return (
     <div className="min-h-screen bg-background font-mono pt-20 pb-8 px-8 md:p-30 relative">
-      {/* Points décoratifs en arrière-plan */}
+      {/* Decorative dots background pattern */}
       <div className="absolute inset-0 opacity-30 pointer-events-none">
         <div className="w-full h-full bg-dots-pattern bg-repeat"></div>
       </div>
       <div className="max-w-3xl mx-auto relative z-10">
-        {/* En-tête */}
+        {/* Header */}
         <AnimatedSection animation="fade-in-up" className="mb-16">
           <div className="flex items-start justify-between mb-2">
             <h1 className="text-3xl font-semibold text-foreground">

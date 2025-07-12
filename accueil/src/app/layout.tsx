@@ -16,6 +16,18 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Home - Deleuil.dev",
   description: "Full Stack Engineer, UI/UX designer and Web3 enthusiast",
+  openGraph: {
+    title: "Home - Deleuil.dev",
+    description: "Full Stack Engineer, UI/UX designer and Web3 enthusiast",
+    url: "https://deleuil.dev",
+    siteName: "Deleuil.dev",
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

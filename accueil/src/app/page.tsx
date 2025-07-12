@@ -10,7 +10,7 @@ import experienceData from "@/data/experience.json";
 export default function Home() {
   return (
     <div className="min-h-screen relative">
-      {/* Points décoratifs en arrière-plan sur toute la page */}
+      {/* Decorative dots background pattern */}
       <div className="fixed inset-0 opacity-30 pointer-events-none">
         <div className="w-full h-full bg-dots-pattern bg-repeat"></div>
       </div>
