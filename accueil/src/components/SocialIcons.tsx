@@ -1,20 +1,22 @@
 import Link from "next/link";
 import { Github, Twitter, Linkedin, FileText, Laptop } from "lucide-react";
-import homeData from "@/data/home.json";
 
-export default function SocialIcons() {
-  const iconMap = {
-    github: Github,
-    twitter: Twitter,
-    linkedin: Linkedin,
-    cv: FileText,
-    laptop: Laptop,
-  };
+interface Shortcut { icon: string; href: string; label: string; }
 
+const iconMap = {
+  github: Github,
+  twitter: Twitter,
+  linkedin: Linkedin,
+  cv: FileText,
+  laptop: Laptop,
+};
+
+export default function SocialIcons({ shortcuts }: { shortcuts: Shortcut[] }) {
   return (
     <div className="flex gap-4">
-      {homeData.homeShortcuts.map((item) => {
+      {shortcuts.map((item) => {
         const Icon = iconMap[item.icon as keyof typeof iconMap];
+        if (!Icon) return null;
         return (
           <Link
             key={item.label}
@@ -28,4 +30,4 @@ export default function SocialIcons() {
       })}
     </div>
   );
-} 
+}

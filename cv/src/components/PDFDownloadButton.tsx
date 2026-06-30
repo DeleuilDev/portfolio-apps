@@ -2,10 +2,10 @@
 
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import { Download } from 'lucide-react';
-import AmericanCVPDF from './AmericanCVPDF';
+import AmericanCVPDF, { CVPDFProps } from './AmericanCVPDF';
 import { useEffect, useState } from 'react';
 
-export default function PDFDownloadButton() {
+export default function PDFDownloadButton(props: CVPDFProps) {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function PDFDownloadButton() {
 
   return (
     <PDFDownloadLink
-      document={<AmericanCVPDF />}
+      document={<AmericanCVPDF {...props} />}
       fileName="Marius_Deleuil_Resume.pdf"
       className="text-gray-400 hover:text-gray-600 transition-colors group flex items-center gap-1.5 text-sm"
       aria-label="Download Resume"
@@ -39,4 +39,4 @@ export default function PDFDownloadButton() {
       )}
     </PDFDownloadLink>
   );
-} 
+}

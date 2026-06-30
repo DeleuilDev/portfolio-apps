@@ -1,10 +1,11 @@
+# Production — images pré-buildées depuis ghcr.io
+# Cloudflare Tunnel existant gère le HTTPS (déleuil.dev → 127.0.0.1:3000, cv.deleuil.dev → 127.0.0.1:3001)
+
 services:
   accueil:
-    build:
-      context: .
-      dockerfile: ./accueil/Dockerfile
+    image: ghcr.io/margame/portfolio-accueil:latest
     ports:
-      - "3000:3000"
+      - "127.0.0.1:3000:3000"
     environment:
       - NODE_ENV=production
       - PORT=3000
@@ -15,31 +16,32 @@ services:
       - portfolio_data:/data
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3000/"]
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/"]
       interval: 30s
       timeout: 10s
       retries: 3
+      start_period: 20s
     networks:
       - portfolio-network
 
   cv:
-    build:
-      context: .
-      dockerfile: ./cv/Dockerfile
+    image: ghcr.io/margame/portfolio-cv:latest
     ports:
-      - "3001:3001"
+      - "127.0.0.1:3001:3001"
     environment:
       - NODE_ENV=production
       - PORT=3001
       - API_URL=http://accueil:3000
     restart: unless-stopped
     depends_on:
-      - accueil
+      accueil:
+        condition: service_healthy
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3001/"]
+      test: ["CMD", "wget", "-qO-", "http://localhost:3001/"]
       interval: 30s
       timeout: 10s
       retries: 3
+      start_period: 20s
     networks:
       - portfolio-network
 
