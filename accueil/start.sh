@@ -1,6 +1,9 @@
 #!/bin/sh
-# Migrations schema
-node_modules/.bin/prisma db push --skip-generate 2>/dev/null || true
+set -e
+
+echo "[start] Running prisma db push..."
+node_modules/.bin/prisma db push --skip-generate
+echo "[start] DB schema ready"
 
 # Auto-seed si la DB est vide (premier déploiement)
 node -e "
