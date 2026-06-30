@@ -1,11 +1,25 @@
 #!/bin/sh
 set -e
 
-echo "[start] Running prisma db push..."
-node_modules/.bin/prisma db push --skip-generate
-echo "[start] DB schema ready"
+echo "[start] Ensuring DB schema..."
+node -e "
+const { PrismaClient } = require('@prisma/client');
+const p = new PrismaClient();
+async function main() {
+  await p.\$executeRawUnsafe(\`
+    CREATE TABLE IF NOT EXISTS \"DataStore\" (
+      \"key\" TEXT NOT NULL PRIMARY KEY,
+      \"data\" TEXT NOT NULL,
+      \"updatedAt\" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+    )
+  \`);
+  console.log('[db] Schema ready');
+  await p.\$disconnect();
+}
+main().catch(e => { console.error('[db error]', e.message); process.exit(1); });
+"
 
-# Auto-seed si la DB est vide (premier déploiement)
+echo "[start] Seeding if empty..."
 node -e "
 const { PrismaClient } = require('@prisma/client');
 const fs = require('fs');
@@ -28,6 +42,6 @@ async function seed() {
   await p.\$disconnect();
 }
 seed().catch(e => { console.error('[seed error]', e.message); process.exit(0); });
-" 2>&1
+"
 
 node server.js
