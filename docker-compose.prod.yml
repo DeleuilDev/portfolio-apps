@@ -5,7 +5,7 @@ services:
   accueil:
     image: ghcr.io/deleuildev/portfolio-accueil:latest
     ports:
-      - "127.0.0.1:3000:3000"
+      - "3000:3000"
     environment:
       - NODE_ENV=production
       - PORT=3000
@@ -27,7 +27,7 @@ services:
   cv:
     image: ghcr.io/deleuildev/portfolio-cv:latest
     ports:
-      - "127.0.0.1:3001:3001"
+      - "3001:3001"
     environment:
       - NODE_ENV=production
       - PORT=3001
