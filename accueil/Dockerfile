@@ -35,7 +35,7 @@ COPY --from=builder /app/src/data ./data/
 COPY --from=builder --chown=nextjs:nodejs /app/start.sh ./start.sh
 
 USER root
-RUN chmod +x /app/start.sh
+RUN chmod +x /app/start.sh && mkdir -p /data && chown nextjs:nodejs /data
 USER nextjs
 
 EXPOSE 3000
