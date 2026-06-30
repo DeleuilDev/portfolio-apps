@@ -3,7 +3,7 @@
 
 services:
   accueil:
-    image: ghcr.io/margame/portfolio-accueil:latest
+    image: ghcr.io/deleuildev/portfolio-accueil:latest
     ports:
       - "127.0.0.1:3000:3000"
     environment:
@@ -25,7 +25,7 @@ services:
       - portfolio-network
 
   cv:
-    image: ghcr.io/margame/portfolio-cv:latest
+    image: ghcr.io/deleuildev/portfolio-cv:latest
     ports:
       - "127.0.0.1:3001:3001"
     environment:
