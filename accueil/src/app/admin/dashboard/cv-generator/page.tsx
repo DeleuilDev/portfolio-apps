@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { db } from '@/lib/db';
 import CVGeneratorClient from './CVGeneratorClient';
 import type { CVGeneratorData } from '@/components/CVGeneratorPDF';
