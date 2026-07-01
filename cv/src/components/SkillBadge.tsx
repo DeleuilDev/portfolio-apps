@@ -12,11 +12,10 @@ import {
   SiNodedotjs,
   SiAngular,
   SiCplusplus,
-  SiAdobephotoshop,
-  SiAdobeillustrator,
   SiFigma
 } from "react-icons/si";
 import { FaJava, FaHammer } from "react-icons/fa";
+import { TbBrandAdobePhotoshop, TbBrandAdobeIllustrator } from "react-icons/tb";
 
 interface SkillBadgeProps {
   name: string;
@@ -41,8 +40,8 @@ export default function SkillBadge({ name, icon }: SkillBadgeProps) {
     web3: SiEthereum,
     hardhat: FaHammer, // Using hammer icon for Hardhat (development tool)
     docker: SiDocker,
-    photoshop: SiAdobephotoshop,
-    illustrator: SiAdobeillustrator,
+    photoshop: TbBrandAdobePhotoshop,
+    illustrator: TbBrandAdobeIllustrator,
     figma: SiFigma,
     // Legacy mappings for compatibility
     next: SiNextdotjs,
